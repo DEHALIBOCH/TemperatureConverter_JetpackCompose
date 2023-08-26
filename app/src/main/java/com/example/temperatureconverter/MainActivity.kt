@@ -37,10 +37,11 @@ fun PreviewMainActivity() {
     MainActivityContent()
 }
 
+var counter = 10
+
 @Composable
 private fun MainActivityContent() {
     val celsius = remember { mutableStateOf(0) }
-    var counter = 10
 
     Column {
         Header(image = R.drawable.sunrise, description = "sunrise image")
